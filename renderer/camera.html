@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="img-src 'self' data:; default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Camera Screen</title>
+  </head>
+  <style>
+    #image {
+      border: solid rgb(24, 20, 20) 2px;
+    }
+  </style>
+  <body>
+    <h1>Camera Screen</h1>
+    <h3>Access camera</h3>
+    <video autoplay width="400" height="300" id="camera"></video>
+    <button id="capture-image">Capture Image</button>
+    <img id="image" alt="captured-image" />
+
+    <script src="camera.js"></script>
+  </body>
+</html>

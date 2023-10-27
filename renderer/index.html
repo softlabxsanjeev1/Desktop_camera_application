@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="img-src 'self' data:; default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello World</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(208, 241, 241);
+    }
+  </style>
+  <body>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>, Chromium
+    <span id="chrome-version"></span>, and Electron
+    <span id="electron-version"></span>.
+    <img id="imageTag" alt="captured-image" />
+    <script src="index.js"></script>
+  </body>
+</html>
